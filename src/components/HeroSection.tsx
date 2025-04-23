@@ -41,10 +41,15 @@ export function HeroSection() {
             tatame e fora dele.
           </p>
         </div>
-
-        <Button className="bg-jitsu-orange hover:bg-orange-600 text-white px-6 py-3 rounded-full text-sm md:text-base">
-          Entre em contato
-        </Button>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-jitsu-orange hover:bg-orange-600 text-white px-6 py-3 rounded-full text-sm md:text-base">
+            Entre em contato
+          </Button>
+        </a>
       </div>
     </section>
   );

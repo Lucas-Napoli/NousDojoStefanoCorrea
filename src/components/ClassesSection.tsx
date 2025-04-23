@@ -166,17 +166,6 @@ export function ClassesSection() {
             ))}
           </div>
         </div>
-
-        <div className="pt-10">
-          <h3 className="text-2xl font-bold mb-8 flex items-center justify-between gap-6 flex-wrap">
-            Cronogramas
-          </h3>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <img src={agenda02} alt="" />
-            <img src={agenda} alt="" />
-          </div>
-        </div>
       </div>
     </section>
   );

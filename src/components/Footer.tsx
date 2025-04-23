@@ -8,13 +8,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-10 w-10 relative flex items-center justify-center">
-                <img
-                  src={icon} // ajuste o caminho conforme a imagem
-                  alt="icone"
-                  className="h-12 md:h-16 object-contain"
-                />
-              </div>
               <div className="font-bold text-xl">
                 <span>NOUS</span>{" "}
                 <span className="text-jitsu-orange">DOJO</span>
@@ -82,7 +75,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/#about"
+                  to="/#team"
                   className="text-gray-400 hover:text-jitsu-orange"
                 >
                   Sobre
@@ -145,6 +138,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} NOUS DOJO. Todos os direitos
             reservados.
           </p>
+          <p>Desenvolvido por Lucas Napoli Pacheco</p>
         </div>
       </div>
     </footer>

@@ -23,35 +23,41 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex gap-8">
-          <Link
-            to="/#about"
+          <a
+            href="#team"
             className="font-medium hover:text-jitsu-orange transition-colors"
           >
             Sobre
-          </Link>
-          <Link
-            to="/#team"
+          </a>
+          <a
+            href="#classes"
             className="font-medium hover:text-jitsu-orange transition-colors"
           >
             Equipe
-          </Link>
-          <Link
-            to="/#classes"
+          </a>
+          <a
+            href="#horarios"
             className="font-medium hover:text-jitsu-orange transition-colors"
           >
             Aulas
-          </Link>
-          <Link
-            to="/#products"
+          </a>
+          <a
+            href="#products"
             className="font-medium hover:text-jitsu-orange transition-colors"
           >
             Produtos
-          </Link>
+          </a>
         </nav>
 
-        <Button className="bg-blue-500 hover:bg-blue-600 rounded-full text-white py-2 px-6">
-          Entre em contato
-        </Button>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-blue-500 hover:bg-blue-600 rounded-full text-white py-2 px-6">
+            Entre em contato
+          </Button>
+        </a>
       </div>
     </header>
   );
