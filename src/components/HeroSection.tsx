@@ -4,7 +4,7 @@ import jiuVideo from "../videos/jiu.mp4";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center px-4 md:px-10 py-12">
+    <section className="relative w-full min-h-screen flex items-center justify-center px-4 md:px-10 py-6">
       {/* Imagem de fundo full */}
       <img
         src={backgroundImg}
