@@ -77,7 +77,7 @@ export function Footer() {
             <address className="not-italic text-gray-400">
               <p className="mb-2">Celso Goncalves Dias - 160</p>
               <p className="mb-2">Itu - SP</p>
-              <p className="mb-2">Email: exemplo@gmail.com</p>
+              <p className="mb-2">Email: nousdojo@gmail.com</p>
               <p>Tel: (11) 97312-8330</p>
             </address>
           </div>

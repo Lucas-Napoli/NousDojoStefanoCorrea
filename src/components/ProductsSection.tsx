@@ -13,36 +13,42 @@ export function ProductsSection() {
       name: "Kimono Nous dojo",
       price: 299.9,
       image: kimono,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       id: 2,
       name: "Casaco Nous",
       price: 249.9,
       image: casaco,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       id: 3,
       name: "Garrafinha personalizada",
       price: 59.9,
       image: acessorio,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       id: 4,
       name: "Kimono Personalizado",
       price: 299.9,
       image: kimono,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       id: 5,
       name: "Casaco Personalizado",
       price: 249.9,
       image: casaco,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       id: 6,
       name: "Garrafinha personalizada",
       price: 59.9,
       image: acessorio,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
   ];
 
@@ -106,7 +112,10 @@ export function ProductsSection() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full flex items-center gap-2">
+                  <Button
+                    className="w-full flex items-center gap-2"
+                    onClick={() => window.open(product.link, "_blank")}
+                  >
                     <ShoppingCart className="h-4 w-4" />
                     Comprar
                   </Button>

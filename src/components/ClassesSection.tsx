@@ -28,6 +28,7 @@ export function ClassesSection() {
         "Desenvolvimento motor e social através de jogos e brincadeiras",
       schedule: "Seg e quarta 19h",
       image: kuma,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       title: "Karasu team",
@@ -35,6 +36,7 @@ export function ClassesSection() {
       description: "Introdução às técnicas básicas do Jiu-Jitsu",
       schedule: "Seg e quarta 09h",
       image: karasu,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       title: "Kitsune team",
@@ -42,6 +44,7 @@ export function ClassesSection() {
       description: "Treinamento avançado e preparação para competições",
       schedule: "Terça e quinta 18h",
       image: kitsune,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       title: "Hotaru team",
@@ -49,6 +52,7 @@ export function ClassesSection() {
       description: "Treinamento avançado e preparação para competições",
       schedule: "Terça e quinta 19h",
       image: hotaru,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
   ];
 
@@ -59,6 +63,7 @@ export function ClassesSection() {
       description: "Ideal para iniciantes, foco nos fundamentos da arte suave",
       schedule: "Seg, Qua e Sex, 19h - 20h30",
       image: jiu01,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
     {
       title: "Jiu-Jitsu Avançado",
@@ -66,6 +71,7 @@ export function ClassesSection() {
         "Para praticantes experientes, com foco em técnicas avançadas e competição",
       schedule: "Ter e Qui, 19h - 21h",
       image: jiu02,
+      link: "https://api.whatsapp.com/send/?phone=5511973128330&text&type=phone_number&app_absent=0",
     },
   ];
 
@@ -84,7 +90,7 @@ export function ClassesSection() {
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 flex items-center justify-between gap-6 flex-wrap">
             <img
-              src={kids} // ajuste o caminho conforme sua imagem
+              src={kids}
               alt="Nous Kids"
               className="h-12 md:h-16 object-contain"
             />
@@ -115,7 +121,11 @@ export function ClassesSection() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => window.open(klass.link, "_blank")}
+                  >
                     Saiba mais
                   </Button>
                 </CardFooter>
@@ -128,7 +138,7 @@ export function ClassesSection() {
         <div>
           <h3 className="text-2xl font-bold mb-8 flex items-center justify-between gap-6 flex-wrap">
             <img
-              src={adulto} // ajuste o caminho conforme a imagem
+              src={adulto}
               alt="Nous Adulto"
               className="h-12 md:h-16 object-contain"
             />
@@ -158,7 +168,11 @@ export function ClassesSection() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => window.open(klass.link, "_blank")}
+                  >
                     Saiba mais
                   </Button>
                 </CardFooter>
